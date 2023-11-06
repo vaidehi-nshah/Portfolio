@@ -20,6 +20,15 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+const projectLinks = document.querySelectorAll(".project__link");
+
+projectLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        const description = this.parentElement.querySelector(".project__link-name");
+        description.style.display = description.style.display === "block" ? "none" : "block";
+    });
+});
+
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
