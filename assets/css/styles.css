@@ -138,6 +138,7 @@ img{
         background-color: rgba(255,255,255,.3);
         transition: .5s;
         backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
     }
 }
 .nav__item{
@@ -554,6 +555,7 @@ img{
         border-radius: .5rem;
         cursor: pointer;
         backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
         transition: .3s;
     }
 }
