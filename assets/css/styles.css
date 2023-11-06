@@ -18,7 +18,7 @@
 /*===== Fuente y tipografia =====*/
 :root{
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 6.25rem;
+    --big-font-size: 6.0rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -137,7 +137,7 @@ img{
         padding: 2rem;
         background-color: rgba(255,255,255,.3);
         transition: .5s;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(50px);
     }
 }
 .nav__item{
@@ -303,7 +303,7 @@ img{
     background-color: rgba(255,255,255,.3);
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     transition: .3s;
 }
 .project__img:hover .project__link{
@@ -339,7 +339,7 @@ img{
     background-color: rgba(255,255,255,.3);
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     transition: .3s;
 }
 .experience__img:hover .experience__link{
@@ -534,5 +534,12 @@ img{
     .home__img {
         width: 500px;
         right: 24%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience__link-name, .project__link-name {
+        font-size: 11px; /* Adjust the font size as needed */
+        padding: 5px; /* Adjust the padding as needed */
     }
 }
